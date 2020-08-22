@@ -1,0 +1,88 @@
+form{
+    width: 50%;
+    margin-bottom: 20px;
+}
+.select-box{
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+.select,
+.options{
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.select,
+.options h3{
+    transition: all .500s ease;
+}
+.select{
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+}
+.select i{
+    font-size: 25px;
+    color: aqua;
+}
+.icon{
+    width: 0;
+    height: 0;
+    border-top: 15px solid rgba(0, 255, 255, 0.802);
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid transparent;
+    position: absolute;
+    bottom: -32px;
+    left: calc(50% - 15px);
+    display: none;
+}
+
+.acti{
+    box-shadow: 0 0 1px 0px aqua,
+                0 2px 5px 2px aqua;
+}
+
+.select:hover{
+    box-shadow: 0 0 1px 0px aqua,
+                0 2px 5px 2px aqua;
+    
+            }
+
+.options{
+    width: 100%;
+    margin-top: 19px;
+    display: none;
+    position: absolute;
+    z-index: 2;
+}
+.options h3{
+    line-height: 40px;
+    font-size: 16px;
+    width: 100%;
+    padding: 8px;
+}
+.options h3:hover{
+    background-color: aqua;
+}
+.options h3:first-child{
+    border-radius: 8px 8px 0 0;
+}
+
+.options h3:last-child{
+    border-radius: 0 0 8px 8px;
+}
+@media screen and (max-width: 900px){
+    form{
+        width: 100%;
+    }
+    .select-box{
+        width: 90%;
+    }
+}
